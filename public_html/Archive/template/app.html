@@ -1,0 +1,27 @@
+<!-- begin #header -->
+<div ng-include src="'template/header.html'"></div>
+<!-- end #header -->
+<div ng-if="setting.layout.pageTopMenu">
+    <!-- begin #sidebar -->
+    <div ng-include src="'template/top-menu.html'"></div>
+    <!-- end #sidebar -->
+</div>
+<div ng-if="setting.layout.pageWithoutSidebar === true">
+    <!-- begin #sidebar -->
+    <div ng-include src="'template/sidebar.html'"></div>
+    <!-- end #sidebar -->
+</div>
+<!-- begin #content -->
+<div id="content" class="content" ng-class="{ 'p-0': setting.layout.pageContentWithoutPadding, 'height-full': setting.layout.pageContentFullHeight }">
+    <div ui-view></div>
+    <!-- begin #footer -->
+    <footer id="footer" class="footer">
+        <a href="javascript:;" class="btn-scroll-to-top" data-click="scroll-top" ng-if="setting.layout.pageWithoutSidebar === false">
+            <span class="hidden-xs">Back to Top</span><i class="fa fa-long-arrow-up"></i>
+        </a>
+        <div class=" "><span class="sr-only sr-focusable">Deloitte.</span></div>
+        <span class="copyright">&copy; 2016 All Right Reserved</span>
+    </footer>
+    <!-- end #footer -->
+</div>
+<!-- end #content -->

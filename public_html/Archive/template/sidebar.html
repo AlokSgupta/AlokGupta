@@ -1,0 +1,107 @@
+<!-- begin #sidebar -->
+<div id="sidebar" class="sidebar" ng-controller="sidebarController">
+    <!-- begin sidebar scrollbar -->
+    <div data-height="100%">
+        <!-- begin sidebar nav -->
+        <ul class="nav">
+            <li class="divider has-minify-btn">
+                <!-- begin sidebar minify button -->
+                <a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify" id="sidebarmin"><i class="fa fa-angle-left"></i></a>
+                <!-- end sidebar minify button -->
+            </li>
+            <li class="nav-header"></li>
+            <li class="has-sub" ui-sref-active="active"  >
+                <a href="javascript:;">
+                    <b class="caret pull-right"></b>
+                    <i class="fa fa-cogs"></i>
+                    <span>System</span>
+                </a>
+                <ul class="sub-menu">
+              
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.dashboard.v2">Infrastructure</a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.home">
+                            <span>Batch</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.database">
+                            <span>Database</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.platform">
+                            <span>Platform</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.web">
+                            <span>Web</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.service">
+                            <span>Services</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+           
+           
+            <li class="has-sub">
+                <a href="javascript:;">
+                    <b class="caret pull-right"></b>
+                    <i class="fa fa-recycle"></i>
+                    <span>Program</span>
+                </a>
+                <ul class="sub-menu">
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.inc">
+
+                            <span>QA</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a href="javascript:;">
+                            <span>Load</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.releasemgt">
+                            <span>Releases</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-sub">
+                <a href="javascript:;">
+                    <b class="caret pull-right"></b>
+                    <i class="fa fa-users"></i>
+                    <span>PMO</span>
+                </a>
+                <ul class="sub-menu">
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.PMOReports">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.PMOUserSummary">
+                            <span>User Management</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+         
+
+          
+
+        </ul>
+        <!-- end sidebar nav -->
+    </div>
+    <!-- end sidebar scrollbar -->
+</div>
+<div class="sidebar-bg"></div>
+<!-- end #sidebar -->

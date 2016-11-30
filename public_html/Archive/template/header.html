@@ -1,0 +1,60 @@
+<!-- begin #header -->
+
+<header id="header" class="header navbar navbar-default navbar-fixed-top">
+    <!-- begin container-fluid -->
+   
+        <!-- begin mobile sidebar expand / collapse button -->
+        <div class="navbar-header">
+            <a  class="navbar-brand" ng-if="setting.layout.pageWithoutSidebar === true"><span class="sr-only sr-focusable">OPInsight</span></a>
+            <a class="navbar-brand" ng-if="setting.layout.pageWithoutSidebar === false"><span class="sr-only sr-focusable">OPInsight</span></a>
+            <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+       
+        <!-- end mobile sidebar expand / collapse button 
+        uyiuyuiyioyoiuy
+        <!-- begin navbar-right -->
+       
+        <ul class="nav navbar-nav navbar-right">
+        	  <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="assets/Images/Users/IMG_6741.JPG" alt="Alok Gupta" />
+                    <span class="hidden-xs">Alok Gupta</span>
+                </a>
+            <li class="dropdown navbar-user" ng-controller="appController">
+              
+                <ul class="dropdown-menu pull-right">
+                    
+                  
+                    <li class="divider"></li>
+                 
+                    <li><a href="javascript:;">Edit Profile</a></li>
+                     <li><a  ui-sref="app.settings">Setting</a></li>
+                    <li class="divider"></li>
+
+                    <li>
+                        <button class="btn-link" ng-click="help()">
+                            &nbsp;&nbsp;
+                            <i class="fa fa-question-circle"></i>
+                            <span>Help</span>
+                        </button>
+                    </li>
+                  
+                    <li>
+                               <a ui-sref="app.login" class="btn-link">
+                                <i class="btn-link fa fa-sign-out">  </i>
+                                    <span>Logout</span>
+                            </a>
+                    
+
+                  
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+ 
+</header>
+<!-- end #header -->
