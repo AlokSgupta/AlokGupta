@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" ng-app="mainApp">
+
+<head>
+    <base href="">
+    <meta charset="utf-8" />
+    <title data-ng-bind="'AlokGupta:  ' + $state.current.data.pageTitle">DashBoard</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+
+    <link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+   <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <!-- ================== END BASE CSS STYLE ================== -->
+
+
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="assets/plugins/pace/pace.js"></script>
+    <!-- ================== END BASE JS ================== -->
+
+    <script src="assets/crossbrowserjs/excanvas.min.js"></script>
+
+
+    <!-- ================== BEGIN BASE ANGULAR JS ================== -->
+    <script src="assets/plugins/angularjs/angular.min.js"></script>
+    <script src="assets/plugins/angularjs/angular-ui-route.min.js"></script>
+    <script src="assets/plugins/bootstrap-angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="assets/plugins/angularjs/ocLazyLoad.min.js"></script>
+    <script src="assets/plugins/angularjs/angular-resource.min.js"></script>
+    <script src="assets/plugins/angularjs/codemirror.min.js"></script>
+    <script src="assets/plugins/angularjs/htmlmixed.min.js"></script>
+    <script src="assets/plugins/angularjs/htmlembedded.min.js"></script>
+
+    <!-- ================== END BASE ANGULAR JS ================== -->
+</head>
+<body ng-controller="appController" >
+    <!-- begin #page-container -->
+    <div id="page-container" class="fade page-container page-header-fixed page-sidebar-fixed page-with-two-sidebar page-with-footer" ng-class="{'page-sidebar-minified': false, 'pace-top': setting.layout.paceTop, 'boxed-layout': setting.layout.pageBoxedLayout }">
+        <div ui-view></div>
+    </div>
+
+
+    <!-- end page container -->
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+    <script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/crossbrowserjs/html5shiv.js"></script>
+    <script src="assets/crossbrowserjs/respond.min.js"></script>
+    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+
+    <!-- ================== END BASE JS ================== -->
+
+    <!-- ================== BEGIN PAGE LEVEL JS ================== -->
+    <script src="assets/js/angular-app.js"></script>
+    <script src="assets/js/angular-setting.js"></script>
+    <script src="assets/js/angular-controller.js"></script>
+        <script src="assets/js/angular-toastr.js"></script>
+    <script src="assets/js/apps.js"></script>
+
+    <!-- ================== END PAGE LEVEL JS ================== -->
+    <!-- ================== BEGIN - Module Level Controllers ================== -->
+    <script src="module/home/DasbboardController.js"></script>
+    <!-- ================== END - Module Level Controllers ================== -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Loading...</h4>
+                </div>
+                <div class="modal-body">
+                    Please wait a moment while we load this screen.
+                    <div class="row"><br /></div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
